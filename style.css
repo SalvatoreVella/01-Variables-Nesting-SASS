@@ -1,3 +1,4 @@
+@charset "UTF-8";
 div {
   border: 1px solid red;
   display: flex;
@@ -5,27 +6,29 @@ div {
   align-items: center;
 }
 div h1 {
-  width: fit-content;
   color: green;
   border-bottom: 1px solid blue;
+  /* Ho provato inizialmente con l'underline 
+  e con solo text-align center ma non mi è piaciuto il risultato
+  così ho dato flex column ecc e ho aggiunto il bordo, che mi è sembrato
+  più simile all'immagine dell'esercizio */
 }
-
-section {
+div section {
   display: flex;
   margin: 1.5vw;
   margin-top: 0;
 }
-section article {
+div section article {
   border: 1px solid green;
 }
-section article p {
+div section article p {
   text-align: center;
   padding: 0.75vw;
 }
-section article:nth-of-type(even) p {
+div section article:nth-of-type(even) p {
   color: red;
 }
-section article:nth-of-type(odd) {
+div section article:nth-of-type(odd) {
   color: blue;
 }
 

@@ -12,7 +12,6 @@ div {
     flex-direction: column;
     align-items: center;
     h1 {
-        width: fit-content;
         color: $color-tertiary;
         border-bottom: $bsize solid $color-secondary;
         /* Ho provato inizialmente con l'underline 
@@ -20,26 +19,26 @@ div {
         così ho dato flex column ecc e ho aggiunto il bordo, che mi è sembrato
         più simile all'immagine dell'esercizio */
     }
-}
-
-section {
-    display: flex;
-    margin: $m-size;
-    margin-top: 0;
-    article {
-        border: $bsize solid $color-tertiary;
-        p {
-            text-align: center;
-            padding: calc($m-size / 2);
-        }
-        &:nth-of-type(even) {
+    section {
+        display: flex;
+        margin: $m-size;
+        margin-top: 0;
+        article {
+            border: $bsize solid $color-tertiary;
             p {
-                color: $color-primary;
+                text-align: center;
+                padding: calc($m-size / 2);
+            }
+            &:nth-of-type(even) {
+                p {
+                    color: $color-primary;
+                }
+            }
+            &:nth-of-type(odd) {
+                color: $color-secondary;
             }
         }
-        &:nth-of-type(odd) {
-            color: $color-secondary;
-        }
+    
     }
-
 }
+
